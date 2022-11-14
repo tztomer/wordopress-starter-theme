@@ -1,0 +1,118 @@
+@media screen and (max-width: 1350px) {
+ html,
+ body {
+  font-size: 14px;
+ }
+ header.header.bg__img {
+  height: 90vh;
+ }
+
+ footer.main-footer .inner-footer-container .footer-menu ul#menu-main-1 li {
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+ }
+}
+@media screen and (max-width: 988px) {
+ html,
+ body {
+  font-size: 12px;
+  h1 {
+   font-size: 3rem;
+  }
+ }
+ header.header.bg__img {
+  height: 70vh;
+ }
+
+ footer.main-footer .inner-footer-container .footer-menu ul#menu-main-1 li {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+ }
+ footer.main-footer .inner-footer-container .slider {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+ }
+ footer.main-footer .inner-footer-container .slider .carousel-wrapper {
+  max-width: 100%;
+ }
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 480px) {
+ .links .menu-main-container ul#menu-main a {
+  font-size: 28px;
+ }
+ footer.main-footer .inner-footer-container .slider {
+  width: min(1600px, 88%);
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  span.small-txt {
+   font-size: 12px;
+  }
+  span.big-txt {
+   font-size: 20px;
+  }
+  .person-text p {
+   font-size: 1rem;
+   line-height: 18px;
+  }
+  .swiper-slide {
+   gap: 11px;
+  }
+ }
+ footer.main-footer .inner-footer-container {
+  height: 356px;
+  .swiper-slide img {
+   width: 70px;
+   height: 70px;
+  }
+  .footer-menu {
+   height: 193px;
+   padding: 2px 22px;
+  }
+  .person-img {
+   align-self: baseline !important;
+  }
+
+  .bottom-footer-menu {
+   flex: 1;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+
+   gap: 4px;
+   .all-rights {
+    order: 2;
+    font-size: 10px;
+   }
+   .created-by {
+    font-size: 10px;
+   }
+  }
+  .top-footer-menu {
+   flex: 1;
+  }
+  ul#menu-main-1 {
+   display: flex;
+
+   align-self: center;
+
+   padding: 0;
+   flex-wrap: wrap;
+   gap: 3px;
+   padding: 0;
+   & li {
+    padding-right: 1.2rem;
+    padding-left: 0.2rem;
+   }
+  }
+  height: 367px;
+  .test-title {
+   font-size: 2.375rem;
+  }
+ }
+}
