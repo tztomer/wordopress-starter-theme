@@ -51,4 +51,28 @@ function load_dashicons_front_end()
 }
 
 add_image_size('recommendation', 120, 120); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
+
+
+
 add_theme_support('post-thumbnails');
+function recommendationCpt()
+{
+ register_post_type(
+  'recommend',
+  array(
+   'public' => true,
+   'labels' => array(
+    'name' => 'Recommendation',
+   ),
+   'supports' => array('title', 'thumbnail'),
+   'menu_icon' => "dashicons-admin-users",
+   'feature-image' => true,
+  ),
+
+ );
+
+
+}
+
+
+add_action('init', 'recommendationCpt');
